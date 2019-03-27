@@ -1,0 +1,1105 @@
+@charset "UTF-8";
+/*CSS Doc*/
+
+html {
+  box-sizing: border-box; 
+}
+img
+{
+  max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+ body
+ {
+ 	font-family: helvetica, Arial, sans-serif;
+ 	font-size: 25px;
+  color: #002517;
+ }
+
+
+.hidden
+{
+	display: none;
+}
+
+.container
+{
+	  margin: 0px auto;
+  	padding: 0px 0px 0 0px;
+  	max-width: 1200px; 
+}
+
+.fish
+{
+	display: none;
+}
+
+#mainHeader
+{
+	border-top: 10px solid #8ea75d;
+}
+
+#logo
+{
+	width: 20%;
+	height: 20%;
+	max-width: 130px;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+#navLeft
+{
+	display: none;
+}
+
+#navRight
+{
+	display: none;
+}
+
+#mobileNav
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#mobileNav button
+{
+	background: url(../images/burger.svg) center no-repeat;
+  	width: 40px;
+  	height: 40px;
+  	border: 0px;
+  	transition: all 400ms ease;
+  	margin-left: auto;
+  	margin-top: -50px;
+  	margin-right: 20px;
+}
+
+#mobileNav button.expanded
+{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#mobileNav li a
+{
+  display: block;
+  padding: 10px 0 10px 0; /*trbl*/
+  color: #8ea75d;
+  text-align: center; 
+  text-decoration: none;
+}
+
+#mobileNav li 
+{
+  border-bottom: 1px solid #efefef; 
+}
+
+#mobileNav li:first-child
+{
+  border-top: 1px solid #efefef;
+}
+
+#mobileNav li:last-child
+{
+  margin-bottom: 10px;
+}
+
+#burgerCon
+{
+  margin-top: 5px;
+  display: none;
+}
+
+#burgerCon.slideToggle
+{
+  display: block;
+}
+
+#searchBar
+{
+   display: none;
+}
+
+#mobileSearch
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	margin-top: -90px;
+	margin-bottom: 80px;
+	margin-right: 20px;
+}
+
+#mobileNav input[type=text]
+{
+  display: block;
+  height: 30px;
+  width: 150px;
+  border: 1px solid #cacaca;
+  border-radius: 3px 0px 0px 3px;
+  background-color: #fefefe;
+  font-size: 10px;
+  color: #0a0a0a;
+  box-shadow: inset 0 1px 2px rgba(10,10,10,0.1);
+}
+
+#mobileNav input[type=submit]
+{
+  height: 30px;
+  width: 50px;
+  border-radius: 0 3px 3px 0;
+  text-align: center;
+  background-color: #8fa771;
+  font-size: 10px;
+  color: #fefefe;
+  border: 0;
+}
+
+#headerDesk
+{
+  display: none;
+}
+
+.bigHero
+{
+  display: none;
+}
+
+
+#heroImage
+{
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+	padding-top: 20px;
+	max-width: 970px;
+}
+
+#heroButton
+{
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#heroButton a
+{
+  display: block;
+  margin: 0 auto;
+  margin-top: -90px;
+  width: 30%;
+  position: relative;
+  text-align: center;
+	background-color: #002157;
+	font-size: 15px;
+	color: #fff;
+  border-radius: 30px;
+	text-decoration: none;
+	padding: 15px;
+  transition: all .3s ease;
+}
+
+#heroButton a:hover
+{
+  background-color: #a99988;
+}
+
+#heroImageTab
+{
+  display: none;
+}
+
+
+#welcomeNews
+{
+	margin: 0 auto;
+	width: 99%;
+	background-color: #efefef;
+	padding: 10px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+#latest
+{
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: dotted #002157 10px;
+  margin-bottom: 100px;
+}
+
+#latest h2
+{
+  text-align: center;
+  font-size: 30px;
+  color: #002157;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+#welcomeNews img
+{
+	display: none;
+}
+
+#troutImage
+{
+  display: block;
+  margin: 0 auto;
+}
+
+#gearImage
+{
+  display: block;
+  margin: 0 auto;
+}
+
+#hatchery
+{
+  margin: 0 auto;
+  text-align: center;
+  width: 97%;
+  font-size: 25px;
+  color: #002157;
+}
+
+#hatchery h3
+{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+
+#hatchery p
+{
+  font-size: 23px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+
+#troutButton
+{
+  margin-top: 30px;
+}
+
+#rodBuilding
+{
+  margin: 0 auto;
+  width: 97%;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 80px;
+  color: #002157;
+}
+
+#rodBuilding h3
+{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  line-height: 50px;
+}
+
+#rodBuilding p
+{
+  font-size: 23px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+
+#rodButton
+{
+  margin-top: 50px;
+}
+
+#gearImage
+{
+  margin-top: 20px;
+}
+
+#gearHere
+{
+  width: 97%;
+  font-size: 25px;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+  color: #002157;
+}
+
+#gearHere h3
+{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 100px;
+}
+
+#gearHere p
+{
+  font-size: 23px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  line-height: 50px;
+}
+
+.newsButtons
+{
+  width: 160px;
+  height: 50px;
+  background: rgba(200,200,200, 0.1);
+  border: solid #002157 2px;
+  font-size: 20px;
+  color: #002157;
+}
+
+#videoContainer
+{
+  margin: 0 auto;
+  background-color: #efefef;
+  width: 99%;
+  padding-bottom: 30px;
+}
+
+#videoContainer h2
+{
+  color: #002157;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+
+#video
+{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+}
+
+#dataViz
+{
+  display: none;
+}
+
+#mainFooter
+{
+  background-color: #8ea75d;
+  width: 99%;
+  margin: 0 auto;
+}
+
+#mainFooter img
+{
+  display: none;
+}
+
+#mainFooter h3
+{
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#footerNav
+{
+  border-bottom: solid #efefef 2px;
+  padding: 20px;
+}
+
+#footerNav ul li a
+{
+  font-size: 10px;
+  color: #e5e5e5;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+#address
+{
+  background-color: #efefef;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+#address ul li
+{
+  font-size: 10px;
+  color: #002157;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+#email
+{
+  background-color: #efefef;
+  font-size: 10px;
+  color: #002157;
+  padding: 30px;
+
+}
+
+#copyRight
+{
+  background-color: #efefef;
+  font-size: 10px;
+  color: #002157;
+  padding: 30px;
+}
+
+@media screen and (min-width: 580px) {
+
+  #latest
+  {
+    border: none;
+  }
+
+  #latest h2
+  {
+    margin-top: 100px;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+  .bigHero
+  {
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin-top: -300px;
+    margin-bottom: 150px;
+    line-height: 60px;
+  }
+
+  .bigHero h3
+  {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .bigHero p
+  {
+    font-size: 28px;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  #heroButton
+  {
+    margin-bottom: 70px;
+  }
+
+  #video
+  {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+  .bigHero
+  {
+    display: block;
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  .bigHero h3
+  {
+    width: 99%;
+    margin-top: -430px;
+    margin-bottom: 400px;
+    text-shadow: 3px 1px 4px #000;
+    font-size: 90px;
+  }
+
+  .bigHero p
+  {
+    margin-top: -400px;
+    margin-bottom: 400px;
+  }
+
+  #heroButton
+  {
+    margin-top: -170px;
+    margin-bottom: 100px;
+    max-width: 600px;
+  }
+
+  #heroButton a
+  {
+    font-size: 20px;
+  }
+
+  #welcomeNews
+  {
+    width: 99%;
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+
+  #welcomeNews img
+{
+  display: flex;
+}
+
+#troutImage
+{
+  display: block;
+  width: 45%;
+  margin-left: auto;
+  margin-right: 3px;
+  transition: .2s ease;
+}
+
+#rodImage
+{
+  width: 45%;
+  transition: .2s ease;
+
+}
+
+#gearImage
+{
+  display: block;
+  width: 45%;
+  margin-left: auto;
+  margin-right: 3px;
+  padding-top: 40px;
+  transition: .2s ease;
+}
+
+#hatchery
+{
+
+  margin-top: 150px;
+
+}
+
+#hatchery h3
+{
+  width: 51%;
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: -300px;
+  line-height: 50px;
+}
+
+#hatchery p
+{
+  width: 50%;
+  float: left;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-top: -220px;
+  line-height: 50px;
+}
+
+#troutButton
+{
+  display: none;
+}
+
+#troutImage:hover
+{
+  opacity: 0.5;
+}
+
+#rodImage:hover
+{
+  opacity: 0.5;
+}
+
+#gearImage:hover
+{
+  opacity: 0.5;
+}
+
+#rodBuilding
+{
+  margin-top: -10px;
+
+}
+
+#rodBuilding h3
+{
+  width: 51%;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: -300px;
+  margin-bottom: 25px;
+  line-height: 50px;
+}
+
+#rodBuilding p
+{
+  width: 50%;
+  float: right;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-top: -220px;
+  margin-bottom: 10px;
+  line-height: 50px;
+}
+
+#rodButton
+{
+  display: none;
+}
+
+
+#gearHere
+{
+}
+
+#gearHere h3
+{
+  width: 51%;
+  margin-top: -280px;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+#gearHere p
+{
+  width: 50%;
+  float: left;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-top: -210px;
+  margin-bottom: 10px;
+  line-height: 50px;
+}
+
+#gearButton
+{
+  display: none;
+}
+
+.newsButtons
+{
+  width: 160px;
+  height: 50px;
+  background: rgba(200,200,200, 0.1);
+  border: solid #002157 2px;
+  font-size: 20px;
+  color: #002157;
+}
+
+#video
+{
+  margin-top: 50px;
+  width: 97%;
+  height: 400px;
+}
+
+#videoContainer h2
+{
+  padding-top: 150px;
+}
+
+#mainFooter img
+{
+  display: flex;
+  width: 15%;
+  padding: 5px;
+}
+
+#footerNav h3
+{
+  display: none;
+}
+
+#footerNav ul 
+{
+  display: flex;
+  flex-direction: row;
+}
+
+#footerNav ul li a
+{
+    font-size: 15px;
+}
+
+}
+
+@media screen and (min-width: 880px) {
+
+  #heroImage
+  {
+    width: 100%;
+    max-width: 3000px;
+  }
+
+  .bigHero
+  {
+    display: block;
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  .bigHero h3
+  {
+    width: 99%;
+    margin-top: -430px;
+    margin-bottom: 400px;
+    text-shadow: 3px 1px 4px #000;
+    font-size: 90px;
+  }
+
+  .bigHero p
+  {
+    margin-top: -400px;
+    margin-bottom: 400px;
+  }
+
+  #heroButton
+  {
+    margin-top: -170px;
+    margin-bottom: 100px;
+    max-width: 800px;
+  }
+
+  #heroButton a
+  {
+    font-size: 30px;
+  }
+
+  #logo
+  {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  #mobileNav
+  {
+    display: none;
+  }
+
+  #navLeft
+  {
+    display: block;
+    width: 370px;
+    margin-right: auto;
+    margin-left: 30px;
+    margin-top: -70px;
+    margin-bottom: 70px;
+  }
+
+  #navLeft ul
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #navLeft ul li a
+  {
+    color: #9b9b9b;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+  }
+
+  #navLeft ul li a:hover
+  {
+    background-color: #efefef;
+    border-radius: 20px;
+    color: #002517;
+  }
+
+  #navRight
+  {
+    display: block;
+    width: 330px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: -90px;
+    margin-bottom: 50px;
+  }
+
+  #navRight ul
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #navRight ul li a
+  {
+    color: #9b9b9b;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+  }
+
+  #navRight ul li a:hover
+  {
+    background-color: #efefef;
+    border-radius: 20px;
+    color: #002517;
+  }
+  
+  
+
+  #welcomeNews
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 600px;
+    width: 99%;
+    background-color: #efefef;
+    color: #002517;
+  }
+
+
+#latest
+{
+  width: 99%;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: -600px;
+  text-align: center;
+  color: #002517;
+}
+
+
+
+  .newsImages
+  {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  #welcomeNews h2
+  {
+    color: #002517;
+    font-size: 50px;
+  }
+
+  #troutImage
+  {
+    width: 99%;
+    margin-left: 1.5px;
+  }
+
+  #rodImage
+  {
+    width: 99%;
+    margin-top: -80px;
+    margin-left: 1.5px;
+  }
+
+  #gearImage
+  {
+    width: 99%;
+    margin-left: 1.5px;
+    margin-top: -120px;
+  }
+
+  #hatchery
+  {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #fff;
+    margin: 5px;
+    margin-top: -370px;
+    padding-bottom: 20px;
+  }
+
+  #hatchery h3
+  {
+    width: 99%;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  #hatchery p
+  {
+    width: 95%;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+
+  #hatchery button
+  {
+    display: block;
+    margin-top: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  #rodBuilding
+  {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #fff;
+    margin: 5px;
+    margin-top: -370px;
+    padding-bottom: 20px;
+  }
+
+  #rodBuilding h3
+  {
+    width: 99%;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  #rodBuilding p
+  {
+    width: 95%;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+
+  #rodBuilding button
+  {
+    display: block;
+    margin-top: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  #gearHere
+  {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #fff;
+    margin: 5px;
+    margin-top: -370px;
+    padding-bottom: 20px;
+  }
+
+  #gearHere h3
+  {
+    width: 99%;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  #gearHere p
+  {
+    width: 95%;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+
+  #gearHere button
+  {
+    display: block;
+    margin-top: 120px;
+    margin: auto;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (min-width: 1150px) {
+
+  #welcomeNews
+  {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  #hatchery
+  {
+    width: 30%;
+  }
+
+  #hatchery h3
+  {
+    font-size: 27px;
+  }
+
+  #hatchery p
+  {
+    font-size: 20px;
+  }
+
+  #rodBuilding
+  {
+    width: 30%;
+  }
+
+  #rodBuilding h3
+  {
+    font-size: 27px;
+  }
+
+  #rodBuilding p
+  {
+    font-size: 20px;
+  }
+
+  #gearHere
+  {
+    width: 30%;
+  }
+
+  #gearHere h3
+  {
+    font-size: 27px;
+  }
+
+  #gearHere p
+  {
+    font-size: 20px;
+  }
+
+  #video
+  {
+    width: 60%;
+  }
+}
